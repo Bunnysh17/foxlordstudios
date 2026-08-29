@@ -90,7 +90,7 @@ export const CHANNELS = [
       { label: "Timeframe", val: "Just in 60 Days" },
     ],
     tags: ["Podcast Direction", "Cinematic Studio Edit", "Shorts Distribution", "Thumbnails"],
-    quote: "Average viewership skyrocketed past all our benchmarks — scaling to 100M+ views with incredible pacing and prime-time packaging.",
+    quote: "In the first week, views increased a lot and almost every video reached millions.",
     desc: "Complete show direction, high-retention cinematic editing, viral short-form distribution, and premium packaging — generating over 100M+ views in just 60 days.",
   },
   {
@@ -119,7 +119,7 @@ export const CHANNELS = [
       { label: "Timeframe", val: "Just in 20 Days" },
     ],
     tags: ["Live Packaging", "Shorts Hooks", "Gamer Aesthetics", "Brand Deals"],
-    quote: "Explosive Day-1 results with viral retention across all shorts — FoxLord's hook direction pushed us past 50M+ views.",
+    quote: "It was crazy seeing my first video hit millions. I really loved their content ideas and they worked so well.",
     desc: "High-energy stream packaging, viral hooks direction, and dynamic shorts systems — hitting 50M+ views in just 20 days with immediate day-1 growth acceleration.",
   },
 ];

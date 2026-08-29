@@ -22,7 +22,7 @@ export function Work() {
           </div>
         </Reveal>
 
-        {/* Side-by-Side Creator Cards with Integrated Reviews */}
+        {/* Side-by-Side Creator Cards with Integrated Highlighted Reviews */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {CHANNELS.map((c, i) => (
             <Reveal key={c.id} delay={i * 0.12} className="h-full">
@@ -95,11 +95,11 @@ export function Work() {
                   {c.highlight && (
                     <div className="mt-3.5">
                       <span
-                        className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs sm:text-[13px] font-black uppercase tracking-wider text-white border shadow-lg"
+                        className="inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-xs sm:text-[13px] font-black uppercase tracking-wider text-white border shadow-xl"
                         style={{
-                          backgroundColor: `${c.accent}20`,
-                          borderColor: `${c.accent}70`,
-                          boxShadow: `0 0 25px ${c.accent}30`,
+                          backgroundColor: `${c.accent}22`,
+                          borderColor: `${c.accent}80`,
+                          boxShadow: `0 0 30px ${c.accent}35`,
                         }}
                       >
                         <span className="relative flex h-2.5 w-2.5">
@@ -118,23 +118,24 @@ export function Work() {
                   )}
                 </div>
 
-                {/* 2-Line Creator Review Block inside Card */}
+                {/* Highlighted 2-Line Creator Review Block inside Card */}
                 <div
-                  className="mt-7 rounded-2xl border p-5 backdrop-blur-md transition-colors"
+                  className="mt-8 rounded-2xl border p-5 sm:p-6 backdrop-blur-xl transition-all duration-300 relative overflow-hidden"
                   style={{
-                    backgroundColor: `${c.accent}0a`,
-                    borderColor: `${c.accent}30`,
+                    backgroundColor: `${c.accent}0d`,
+                    borderColor: `${c.accent}40`,
+                    boxShadow: `0 10px 30px -10px ${c.accentGlow}`,
                   }}
                 >
-                  <div className="flex items-center justify-between gap-2 mb-2.5">
-                    <div className="flex text-amber-400 text-xs tracking-wider">
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <div className="flex text-amber-400 text-sm tracking-wider">
                       ★★★★★
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/50">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">
                       {c.creator} &bull; Client Review
                     </span>
                   </div>
-                  <blockquote className="text-sm leading-relaxed text-[#f0f0f8] italic font-normal">
+                  <blockquote className="text-sm sm:text-[15px] leading-relaxed text-white font-medium italic">
                     &ldquo;{c.quote}&rdquo;
                   </blockquote>
                 </div>
