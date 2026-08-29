@@ -54,18 +54,10 @@ export function Founder() {
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <Reveal>
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="eyebrow">
-                <span className="text-white/40">03 /</span> Leadership
-              </p>
-              <h2 className="display mt-4 text-[clamp(2.5rem,7vw,5.5rem)] font-extrabold uppercase leading-[0.9] bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
-                The Team.
-              </h2>
-            </div>
-            <p className="max-w-sm text-sm leading-relaxed text-[#9e9eb0] md:text-right">
-              The driving force behind every frame, strategy and upload at FOXLORD STUDIO'S.
-            </p>
+          <div className="text-center sm:text-left">
+            <h2 className="display text-[clamp(2.5rem,7vw,5.5rem)] font-extrabold uppercase leading-[0.9] bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
+              The Team.
+            </h2>
           </div>
         </Reveal>
 

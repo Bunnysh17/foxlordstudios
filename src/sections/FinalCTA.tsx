@@ -29,8 +29,7 @@ export function FinalCTA() {
       </div>
 
       {/* Heading */}
-      <p className="eyebrow text-center">Let's talk</p>
-      <h2 className="display mx-auto mt-6 max-w-4xl text-center text-[clamp(2rem,7vw,5.5rem)] font-bold uppercase leading-[0.9] text-white">
+      <h2 className="display mx-auto max-w-4xl text-center text-[clamp(2.2rem,7vw,5.5rem)] font-bold uppercase leading-[0.9] text-white">
         <MaskReveal lines={["Ready to grow", "your channel?"]} />
       </h2>
 

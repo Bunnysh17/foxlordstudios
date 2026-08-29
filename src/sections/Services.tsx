@@ -6,12 +6,11 @@ export function Services() {
     <section id="services" className="relative z-10 px-5 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-[1200px]">
         <Reveal>
-          <p className="eyebrow">
-            <span className="text-white/40">02 /</span> Services
-          </p>
-          <h2 className="display mt-4 text-[clamp(2rem,6vw,4.4rem)] font-extrabold uppercase leading-[0.95] bg-gradient-to-b from-white to-white/45 bg-clip-text text-transparent">
-            What we do.
-          </h2>
+          <div className="text-center sm:text-left">
+            <h2 className="display text-[clamp(2rem,6vw,4.4rem)] font-extrabold uppercase leading-[0.95] bg-gradient-to-b from-white to-white/45 bg-clip-text text-transparent">
+              What we do.
+            </h2>
+          </div>
         </Reveal>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
