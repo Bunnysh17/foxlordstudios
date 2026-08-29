@@ -34,11 +34,13 @@ const VIVEK_SKILLS = [
   "Growth Architecture",
 ];
 
-const NIRLAMBH_AREAS = [
-  ["Daily Operations", "Full workflow execution, publishing & scheduling"],
-  ["Team Coordination", "Managing editors, thumbnail artists & GFX team"],
-  ["Client Relations", "Direct communication & creator day-to-day sync"],
-  ["Overall Management", "Ensuring quality control & milestone delivery"],
+const NIRLAMBH_SKILLS = [
+  "Daily Operations",
+  "Team Coordination",
+  "Client Relations",
+  "Overall Management",
+  "Workflow Execution",
+  "Quality Control",
 ];
 
 const STATS = [
@@ -61,7 +63,7 @@ export function Founder() {
           </div>
         </Reveal>
 
-        {/* Main Leadership Grid: Vivek (Main) + Nirlambh (Associate) */}
+        {/* Main Leadership Grid: Vivek (Founder & CEO) + Nirlambh (Founder's Associate) */}
         <div className="mt-12 grid gap-8 lg:grid-cols-12 items-stretch">
           {/* Vivek Kumar — Founder & CEO */}
           <Reveal className="lg:col-span-7 h-full">
@@ -112,7 +114,7 @@ export function Founder() {
 
           {/* Nirlambh Singh — Founder's Associate */}
           <Reveal delay={0.12} className="lg:col-span-5 h-full">
-            <div className="flex flex-col justify-between h-full rounded-3xl border border-white/10 bg-[#090910]/95 p-8 sm:p-9 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-white/25">
+            <div className="flex flex-col justify-between h-full rounded-3xl border border-white/10 bg-[#090910]/95 p-8 sm:p-10 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-white/25">
               <div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="rounded-full bg-purple-500/15 border border-purple-500/40 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-widest text-purple-400">
@@ -132,24 +134,28 @@ export function Founder() {
                   </p>
                 </div>
 
-                <div className="h-px w-24 my-5 bg-gradient-to-r from-purple-400/40 to-transparent" />
+                <div className="h-px w-24 my-6 bg-gradient-to-r from-purple-400/40 to-transparent" />
 
-                <p className="text-sm sm:text-base leading-relaxed text-[#dcdce8] font-medium">
+                <p className="text-base sm:text-lg leading-relaxed text-white font-medium">
                   Supporting the founder with daily operations, team coordination and overall management.
                 </p>
 
-                {/* Coordination Area Grid */}
-                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {NIRLAMBH_AREAS.map(([title, detail]) => (
-                    <div
-                      key={title}
-                      className="rounded-xl border border-white/5 bg-white/[0.02] p-3.5 transition-colors hover:border-white/15 hover:bg-white/[0.04]"
-                    >
-                      <p className="display text-xs font-bold text-white uppercase tracking-wider">{title}</p>
-                      <p className="mt-1 text-[11px] leading-relaxed text-[#8a8a9a]">{detail}</p>
-                    </div>
-                  ))}
-                </div>
+                <p className="mt-4 text-sm sm:text-base leading-relaxed text-[#b5b5c6]">
+                  Ensuring seamless day-to-day coordination between creators, video editors and graphic designers
+                  while maintaining exceptional quality and punctuality across every project.
+                </p>
+              </div>
+
+              {/* Matching clean pill tags at the bottom */}
+              <div className="mt-8 flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                {NIRLAMBH_SKILLS.map((s) => (
+                  <span
+                    key={s}
+                    className="rounded-full border border-white/15 bg-white/[0.04] px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] text-white/70 transition-colors hover:border-white/40 hover:text-white"
+                  >
+                    {s}
+                  </span>
+                ))}
               </div>
             </div>
           </Reveal>
