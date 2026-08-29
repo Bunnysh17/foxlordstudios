@@ -52,7 +52,7 @@ const STATS = [
 
 export function Founder() {
   return (
-    <section id="founder" className="relative z-10 px-5 py-24 sm:px-8 sm:py-28">
+    <section id="founder" className="relative z-10 px-5 pt-20 pb-8 sm:px-8 sm:pt-24 sm:pb-10">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <Reveal>
@@ -179,7 +179,7 @@ export function Founder() {
 
         {/* Pull Quote */}
         <Reveal>
-          <p className="display mx-auto mt-16 max-w-3xl text-center text-[clamp(1.3rem,3.6vw,2.5rem)] font-bold uppercase leading-tight tracking-[-0.02em] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+          <p className="display mx-auto mt-10 max-w-3xl text-center text-[clamp(1.3rem,3.6vw,2.5rem)] font-bold uppercase leading-tight tracking-[-0.02em] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
             “Creators Create. Foxlord Directs.”
           </p>
         </Reveal>

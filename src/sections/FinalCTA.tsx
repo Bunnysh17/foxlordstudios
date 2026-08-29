@@ -23,7 +23,7 @@ export function FinalCTA() {
   };
 
   return (
-    <section id="contact" className="relative z-10 overflow-hidden px-5 py-24 sm:px-8 sm:py-32">
+    <section id="contact" className="relative z-10 overflow-hidden px-5 pt-8 pb-20 sm:px-8 sm:pt-10 sm:pb-28">
       <div className="pointer-events-none absolute left-1/2 top-1/2 w-[70vw] max-w-[640px] -translate-x-1/2 -translate-y-1/2 opacity-10">
         <LogoMark className="w-full" />
       </div>
@@ -39,7 +39,7 @@ export function FinalCTA() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3"
+        className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3"
       >
         {/* WhatsApp */}
         <a
