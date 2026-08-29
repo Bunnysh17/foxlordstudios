@@ -17,23 +17,23 @@ export function Work() {
               </h2>
             </div>
             <p className="max-w-md text-sm sm:text-base leading-relaxed text-[#9e9eb0]">
-              Real top-tier creators scaled with custom editing systems, high-retention cuts, and explosive multi-platform reach.
+              Real top-tier creators scaled with custom editing systems, viral retention hooks, and explosive multi-platform reach.
             </p>
           </div>
         </Reveal>
 
-        {/* Creator Performance Cards */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        {/* Side-by-Side Creator Cards with Integrated Reviews */}
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {CHANNELS.map((c, i) => (
             <Reveal key={c.id} delay={i * 0.12} className="h-full">
               <article
-                className="group relative flex flex-col justify-between h-full overflow-hidden rounded-3xl border border-white/10 bg-[#090910]/95 p-6 sm:p-8 backdrop-blur-xl shadow-[0_20px_70px_rgba(0,0,0,0.6)] transition-all duration-500 hover:border-white/25 hover:shadow-[0_20px_80px_rgba(255,255,255,0.05)] hover:-translate-y-1"
+                className="group relative flex flex-col justify-between h-full overflow-hidden rounded-3xl border border-white/10 bg-[#090910]/95 p-7 sm:p-9 backdrop-blur-xl shadow-[0_20px_70px_rgba(0,0,0,0.6)] transition-all duration-500 hover:border-white/25 hover:shadow-[0_20px_80px_rgba(255,255,255,0.05)] hover:-translate-y-1"
                 style={{
                   boxShadow: `0 20px 60px -15px ${c.accentGlow}`,
                 }}
               >
                 <div>
-                  {/* Top Avatar & Social Links */}
+                  {/* Top Avatar & Social Buttons */}
                   <div className="flex items-center justify-between gap-4">
                     <div className="relative">
                       <div
@@ -45,7 +45,7 @@ export function Work() {
                         alt={c.creator}
                         className="relative h-20 w-20 sm:h-24 sm:w-24 rounded-2xl object-cover ring-2 ring-white/40 shadow-2xl bg-[#090910]"
                       />
-                      {/* Verified badge */}
+                      {/* Verified badge checkmark */}
                       <div
                         className="absolute -bottom-1.5 -right-1.5 flex h-6 w-6 items-center justify-center rounded-full text-white text-[11px] font-black shadow-lg ring-2 ring-[#090910]"
                         style={{ backgroundColor: c.accent }}
@@ -85,20 +85,21 @@ export function Work() {
                   </div>
 
                   {/* Channel Title */}
-                  <div className="mt-5">
+                  <div className="mt-6">
                     <h3 className="display text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-white">
                       {c.name}
                     </h3>
                   </div>
 
-                  {/* Highlight Badge with Animated Ping */}
+                  {/* Highlight Badge with Animated Glowing Ping */}
                   {c.highlight && (
-                    <div className="mt-3">
+                    <div className="mt-3.5">
                       <span
-                        className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-black uppercase tracking-wider text-white border shadow-lg"
+                        className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs sm:text-[13px] font-black uppercase tracking-wider text-white border shadow-lg"
                         style={{
-                          backgroundColor: `${c.accent}18`,
-                          borderColor: `${c.accent}60`,
+                          backgroundColor: `${c.accent}20`,
+                          borderColor: `${c.accent}70`,
+                          boxShadow: `0 0 25px ${c.accent}30`,
                         }}
                       >
                         <span className="relative flex h-2.5 w-2.5">
@@ -115,93 +116,31 @@ export function Work() {
                       </span>
                     </div>
                   )}
+                </div>
 
-                  {/* 4 Stats Grid Matrix */}
-                  <div className="mt-6 grid grid-cols-4 gap-2.5">
-                    {c.metrics.map((m) => (
-                      <div
-                        key={m.label}
-                        className="rounded-xl border border-white/5 bg-white/[0.03] p-3 text-center transition-colors hover:border-white/15 hover:bg-white/[0.06]"
-                      >
-                        <p className="display text-base sm:text-xl font-black text-white">{m.val}</p>
-                        <p className="text-[9px] uppercase tracking-wider text-[#8a8a9e] font-bold mt-1 truncate">{m.label}</p>
-                      </div>
-                    ))}
+                {/* 2-Line Creator Review Block inside Card */}
+                <div
+                  className="mt-7 rounded-2xl border p-5 backdrop-blur-md transition-colors"
+                  style={{
+                    backgroundColor: `${c.accent}0a`,
+                    borderColor: `${c.accent}30`,
+                  }}
+                >
+                  <div className="flex items-center justify-between gap-2 mb-2.5">
+                    <div className="flex text-amber-400 text-xs tracking-wider">
+                      ★★★★★
+                    </div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/50">
+                      {c.creator} &bull; Client Review
+                    </span>
                   </div>
+                  <blockquote className="text-sm leading-relaxed text-[#f0f0f8] italic font-normal">
+                    &ldquo;{c.quote}&rdquo;
+                  </blockquote>
                 </div>
               </article>
             </Reveal>
           ))}
-        </div>
-
-        {/* Highlighted Separate Creator Reviews Section */}
-        <div className="mt-20">
-          <Reveal>
-            <div className="text-center max-w-2xl mx-auto mb-10">
-              <p className="eyebrow">
-                <span className="text-white/40">02 /</span> Client Feedback
-              </p>
-              <h3 className="display mt-3 text-[clamp(1.8rem,4vw,3.2rem)] font-extrabold uppercase text-white">
-                What Creators Say.
-              </h3>
-              <p className="text-sm text-[#8d8da0] mt-2">
-                Direct reviews from the creators we work with every day.
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            {CHANNELS.map((c, i) => (
-              <Reveal key={`review-${c.id}`} delay={i * 0.15} className="h-full">
-                <div
-                  className="relative flex flex-col justify-between h-full rounded-3xl border p-7 sm:p-8 backdrop-blur-xl shadow-2xl transition-all duration-300 hover:-translate-y-1"
-                  style={{
-                    backgroundColor: `${c.accent}08`,
-                    borderColor: `${c.accent}35`,
-                    boxShadow: `0 20px 50px -20px ${c.accentGlow}`,
-                  }}
-                >
-                  <div>
-                    {/* Header with Creator Info & 5 Gold Stars */}
-                    <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-5">
-                      <div className="flex items-center gap-3.5">
-                        <img
-                          src={c.avatar}
-                          alt={c.creator}
-                          className="h-12 w-12 rounded-xl object-cover ring-2 ring-white/20"
-                        />
-                        <div>
-                          <p className="text-sm font-bold text-white flex items-center gap-1.5">
-                            {c.creator}
-                            <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white/10 text-white/80">
-                              {c.name}
-                            </span>
-                          </p>
-                          <p className="text-xs text-[#8a8a9c]">{c.niche}</p>
-                        </div>
-                      </div>
-
-                      {/* 5 Stars */}
-                      <div className="flex text-amber-400 text-sm tracking-wider">
-                        ★★★★★
-                      </div>
-                    </div>
-
-                    {/* Review Quote Body */}
-                    <blockquote className="mt-5 text-sm sm:text-base leading-relaxed text-[#eaeaf2] font-normal italic">
-                      &ldquo;{c.quote}&rdquo;
-                    </blockquote>
-                  </div>
-
-                  {/* Bottom Tag */}
-                  <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-white/50">
-                    <span className="font-medium">Verified Client Feedback</span>
-                    <span className="font-bold" style={{ color: c.accent }}>{c.highlight}</span>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </div>
     </section>
