@@ -9,7 +9,6 @@ import { Hero } from "./sections/Hero";
 import { Work } from "./sections/Work";
 import { Services } from "./sections/Services";
 import { Founder } from "./sections/Founder";
-import { Process } from "./sections/Process";
 import { FinalCTA } from "./sections/FinalCTA";
 import { Footer } from "./sections/Footer";
 
@@ -57,7 +56,6 @@ export default function App() {
             <Work />
             <Services />
             <Founder />
-            <Process />
             <FinalCTA />
           </main>
           <Footer />
