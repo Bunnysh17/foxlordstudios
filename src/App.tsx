@@ -5,7 +5,6 @@ import Lenis from "lenis";
 import { SmoothContext } from "./lib/SmoothContext";
 import { AmbientBg, ScrollProgress } from "./components/Effects";
 import { Navbar } from "./components/Navbar";
-import { Ticker } from "./components/Ticker";
 import { Hero } from "./sections/Hero";
 import { Work } from "./sections/Work";
 import { Services } from "./sections/Services";
@@ -55,7 +54,6 @@ export default function App() {
           <Navbar />
           <main className="relative z-10">
             <Hero ready={ready} />
-            <Ticker />
             <Work />
             <Services />
             <Founder />

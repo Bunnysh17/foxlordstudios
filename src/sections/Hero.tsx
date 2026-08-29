@@ -90,20 +90,6 @@ export function Hero({ ready }: { ready: boolean }) {
           </motion.a>
         </div>
       </div>
-
-      {/* scroll hint */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={ready ? { opacity: 1 } : {}}
-        transition={{ delay: 1.6, duration: 1 }}
-        className="pointer-events-none absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
-      >
-        <span className="text-[9px] uppercase tracking-[0.35em] text-white/30">Scroll</span>
-        <span
-          className="h-10 w-px bg-gradient-to-b from-white/50 to-transparent"
-          style={{ animation: "pulse-soft 2s ease-in-out infinite" }}
-        />
-      </motion.div>
     </section>
   );
 }

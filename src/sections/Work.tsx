@@ -13,11 +13,11 @@ export function Work() {
                 <span className="text-white/40">01 /</span> Case Studies
               </p>
               <h2 className="display mt-4 text-[clamp(2.2rem,6.5vw,4.8rem)] font-extrabold uppercase leading-[0.92] bg-gradient-to-b from-white via-white to-white/40 bg-clip-text text-transparent">
-                Channels We Direct.
+                CHANNELS WE DIRECT.
               </h2>
             </div>
             <p className="max-w-md text-sm sm:text-base leading-relaxed text-[#9e9eb0]">
-              Real top-tier creators. Scaled with custom editing language, weekly systems, and brand positioning.
+              Real top-tier creators scaled with custom editing language, retention systems, and high-impact packaging.
             </p>
           </div>
         </Reveal>
@@ -32,7 +32,7 @@ export function Work() {
                   boxShadow: `0 20px 60px -15px ${c.accentGlow}`,
                 }}
               >
-                {/* Real YouTube Channel Banner */}
+                {/* Real Channel Banner */}
                 <div className="relative aspect-[3/1] w-full overflow-hidden bg-black/90 border-b border-white/10">
                   <img
                     src={c.banner}
@@ -62,8 +62,8 @@ export function Work() {
 
                 {/* Card Body */}
                 <div className="relative -mt-10 px-6 sm:px-8 pb-8 pt-0 flex-1 flex flex-col justify-between">
-                  {/* Real Creator Avatar & Basic Details Header */}
                   <div>
+                    {/* Real Creator Avatar & Social Action Header */}
                     <div className="flex items-end justify-between gap-4">
                       <div className="relative">
                         <div
@@ -114,19 +114,14 @@ export function Work() {
                       </div>
                     </div>
 
-                    {/* Titles */}
+                    {/* Title */}
                     <div className="mt-4">
-                      <div className="flex items-center gap-2">
-                        <h3 className="display text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-white group-hover:text-white">
-                          {c.name}
-                        </h3>
-                      </div>
-                      <p className="text-xs sm:text-sm font-medium text-[#8d8da0] mt-0.5">
-                        <span className="text-white/80 font-semibold">{c.creator}</span> · {c.handle} · {c.igHandle}
-                      </p>
+                      <h3 className="display text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-white group-hover:text-white">
+                        {c.name}
+                      </h3>
                     </div>
 
-                    {/* Highlight Badge — e.g. "50M+ Views in 25 Days" */}
+                    {/* Highlight Badge — e.g. "100M+ Views in 60 Days" / "50M+ Views in 20 Days" */}
                     {c.highlight && (
                       <div className="mt-3">
                         <span
@@ -204,10 +199,18 @@ export function Work() {
                     </div>
                   </div>
 
-                  {/* Testimonial Quote */}
+                  {/* Creator Testimonial Review */}
                   <div className="mt-6 pt-4 border-t border-white/10">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="flex text-amber-400 text-xs">
+                        ★★★★★
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">
+                        {c.creator} &bull; Client Review
+                      </span>
+                    </div>
                     <blockquote
-                      className="border-l-2 pl-3.5 py-1 text-xs italic leading-relaxed text-[#c4c4d4] rounded-r-lg bg-white/[0.015]"
+                      className="border-l-2 pl-3.5 py-1.5 text-xs italic leading-relaxed text-[#dcdce8] rounded-r-lg bg-white/[0.02]"
                       style={{ borderColor: c.accent }}
                     >
                       &ldquo;{c.quote}&rdquo;
@@ -222,5 +225,3 @@ export function Work() {
     </section>
   );
 }
-
-
