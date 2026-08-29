@@ -90,7 +90,7 @@ export const CHANNELS = [
       { label: "Timeframe", val: "Just in 60 Days" },
     ],
     tags: ["Podcast Direction", "Cinematic Studio Edit", "Shorts Distribution", "Thumbnails"],
-    quote: "In the first week, views increased a lot and almost every video reached millions.",
+    quote: "Just after the first week I saw a big jump in views and followers and almost every video reached millions.",
     desc: "Complete show direction, high-retention cinematic editing, viral short-form distribution, and premium packaging — generating over 100M+ views in just 60 days.",
   },
   {
