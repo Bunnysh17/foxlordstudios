@@ -25,27 +25,20 @@ function CountUp({ to, suffix = "" }: { to: number; suffix?: string }) {
   );
 }
 
-const LEADERS = [
-  {
-    name: "VIVEK KUMAR",
-    role: "Founder & CEO",
-    company: "Foxlord Studio",
-    desc: "Leading the team, strategy and operations behind Foxlord Studio.",
-    avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-    accent: "#3b82f6",
-    accentGlow: "rgba(59, 130, 246, 0.2)",
-    focus: ["Channel Strategy", "Editing Direction", "Creator Branding", "Executive Direction"],
-  },
-  {
-    name: "Nirlambh Singh",
-    role: "Founder’s Associate",
-    company: "Foxlord Studio",
-    desc: "Supporting the founder with daily operations, team coordination and overall management.",
-    avatar: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-    accent: "#a855f7",
-    accentGlow: "rgba(168, 85, 247, 0.2)",
-    focus: ["Daily Operations", "Team Coordination", "Client Relations", "Workflow Systems"],
-  },
+const VIVEK_SKILLS = [
+  "Executive Direction",
+  "Channel Strategy",
+  "Editing Direction",
+  "Creator Branding",
+  "Retention Systems",
+  "Growth Architecture",
+];
+
+const NIRLAMBH_AREAS = [
+  ["Daily Operations", "Full workflow execution, publishing & scheduling"],
+  ["Team Coordination", "Managing editors, thumbnail artists & GFX team"],
+  ["Client Relations", "Direct communication & creator day-to-day sync"],
+  ["Overall Management", "Ensuring quality control & milestone delivery"],
 ];
 
 const STATS = [
@@ -59,7 +52,7 @@ export function Founder() {
   return (
     <section id="founder" className="relative z-10 px-5 py-24 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-[1200px]">
-        {/* Section Header */}
+        {/* Header */}
         <Reveal>
           <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
@@ -76,79 +69,98 @@ export function Founder() {
           </div>
         </Reveal>
 
-        {/* Leadership Profile Cards */}
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
-          {LEADERS.map((leader, i) => (
-            <Reveal key={leader.name} delay={i * 0.12} className="h-full">
-              <div
-                className="group relative flex flex-col justify-between h-full rounded-3xl border border-white/10 bg-[#090910]/95 p-7 sm:p-9 backdrop-blur-xl transition-all duration-500 hover:border-white/25 hover:-translate-y-1"
-                style={{
-                  boxShadow: `0 20px 60px -20px ${leader.accentGlow}`,
-                }}
-              >
-                <div>
-                  {/* Avatar & Badges */}
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="relative">
-                      <div
-                        className="absolute -inset-1 rounded-2xl blur-sm opacity-60 group-hover:opacity-100 transition-opacity duration-300"
-                        style={{ backgroundColor: leader.accent }}
-                      />
-                      <img
-                        src={leader.avatar}
-                        alt={leader.name}
-                        className="relative h-20 w-20 sm:h-24 sm:w-24 rounded-2xl object-cover ring-2 ring-white/30 shadow-xl bg-[#090910]"
-                      />
-                      <div
-                        className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full text-white text-[10px] font-black shadow-md ring-2 ring-[#090910]"
-                        style={{ backgroundColor: leader.accent }}
-                      >
-                        ✓
-                      </div>
-                    </div>
+        {/* Main Leadership Grid: Vivek (Main) + Nirlambh (Associate) */}
+        <div className="mt-12 grid gap-8 lg:grid-cols-12 items-stretch">
+          {/* Vivek Kumar — Founder & CEO */}
+          <Reveal className="lg:col-span-7 h-full">
+            <div className="flex flex-col justify-between h-full rounded-3xl border border-white/10 bg-[#090910]/95 p-8 sm:p-10 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-white/25">
+              <div>
+                <div className="flex items-center justify-between gap-4">
+                  <span className="rounded-full bg-blue-500/15 border border-blue-500/40 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-widest text-blue-400">
+                    Founder & CEO
+                  </span>
+                  <span className="text-xs uppercase tracking-[0.2em] text-white/40 font-semibold">
+                    Foxlord Studio
+                  </span>
+                </div>
 
-                    {/* Role Pill */}
-                    <span
-                      className="rounded-full px-3.5 py-1.5 text-[11px] font-extrabold uppercase tracking-widest text-white border shadow-md"
-                      style={{
-                        backgroundColor: `${leader.accent}18`,
-                        borderColor: `${leader.accent}50`,
-                      }}
-                    >
-                      {leader.role}
-                    </span>
-                  </div>
-
-                  {/* Name & Company */}
-                  <div className="mt-6">
-                    <h3 className="display text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-white">
-                      {leader.name}
-                    </h3>
-                    <p className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white/50 mt-1">
-                      {leader.company}
-                    </p>
-                  </div>
-
-                  {/* Description */}
-                  <p className="mt-4 text-sm sm:text-base leading-relaxed text-[#c4c4d4]">
-                    {leader.desc}
+                <div className="mt-6">
+                  <h3 className="display text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white">
+                    VIVEK KUMAR
+                  </h3>
+                  <p className="text-sm font-semibold text-white/60 mt-1 uppercase tracking-wider">
+                    Creative Director &bull; Founder & CEO
                   </p>
+                </div>
 
-                  {/* Focus Tags */}
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    {leader.focus.map((f) => (
-                      <span
-                        key={f}
-                        className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white/70 transition-colors group-hover:border-white/20 group-hover:text-white"
-                      >
-                        {f}
-                      </span>
-                    ))}
-                  </div>
+                <div className="h-px w-32 my-6 bg-gradient-to-r from-white/40 to-transparent" />
+
+                <p className="text-base sm:text-lg leading-relaxed text-white font-medium">
+                  Leading the team, strategy and operations behind Foxlord Studio.
+                </p>
+
+                <p className="mt-4 text-sm sm:text-base leading-relaxed text-[#b5b5c6]">
+                  Vivek treats creator channels like premium media brands — directing the entire visual language,
+                  high-retention edits, packaging and weekly growth systems so content becomes impossible to ignore.
+                </p>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                {VIVEK_SKILLS.map((s) => (
+                  <span
+                    key={s}
+                    className="rounded-full border border-white/15 bg-white/[0.04] px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] text-white/70 transition-colors hover:border-white/40 hover:text-white"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Nirlambh Singh — Founder's Associate */}
+          <Reveal delay={0.12} className="lg:col-span-5 h-full">
+            <div className="flex flex-col justify-between h-full rounded-3xl border border-white/10 bg-[#090910]/95 p-8 sm:p-9 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-white/25">
+              <div>
+                <div className="flex items-center justify-between gap-4">
+                  <span className="rounded-full bg-purple-500/15 border border-purple-500/40 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-widest text-purple-400">
+                    Founder’s Associate
+                  </span>
+                  <span className="text-xs uppercase tracking-[0.2em] text-white/40 font-semibold">
+                    Foxlord Studio
+                  </span>
+                </div>
+
+                <div className="mt-6">
+                  <h3 className="display text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-white">
+                    NIRLAMBH SINGH
+                  </h3>
+                  <p className="text-sm font-semibold text-white/60 mt-1 uppercase tracking-wider">
+                    Operations &bull; Management
+                  </p>
+                </div>
+
+                <div className="h-px w-24 my-5 bg-gradient-to-r from-purple-400/40 to-transparent" />
+
+                <p className="text-sm sm:text-base leading-relaxed text-[#dcdce8] font-medium">
+                  Supporting the founder with daily operations, team coordination and overall management.
+                </p>
+
+                {/* Coordination Area Grid */}
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {NIRLAMBH_AREAS.map(([title, detail]) => (
+                    <div
+                      key={title}
+                      className="rounded-xl border border-white/5 bg-white/[0.02] p-3.5 transition-colors hover:border-white/15 hover:bg-white/[0.04]"
+                    >
+                      <p className="display text-xs font-bold text-white uppercase tracking-wider">{title}</p>
+                      <p className="mt-1 text-[11px] leading-relaxed text-[#8a8a9a]">{detail}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </Reveal>
-          ))}
+            </div>
+          </Reveal>
         </div>
 
         {/* Stats Band */}
