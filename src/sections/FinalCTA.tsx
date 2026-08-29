@@ -24,7 +24,7 @@ export function FinalCTA() {
 
   return (
     <section id="contact" className="relative z-10 overflow-hidden px-5 pt-8 pb-20 sm:px-8 sm:pt-10 sm:pb-28">
-      <div className="pointer-events-none absolute left-1/2 top-1/2 w-[70vw] max-w-[640px] -translate-x-1/2 -translate-y-1/2 opacity-10">
+      <div className="pointer-events-none absolute left-1/2 top-1/2 w-[75vw] max-w-[680px] -translate-x-1/2 -translate-y-1/2 opacity-20 transition-opacity">
         <LogoMark className="w-full" />
       </div>
 
@@ -46,7 +46,7 @@ export function FinalCTA() {
           href={`https://wa.me/${BRAND.whatsapp}`}
           target="_blank"
           rel="noreferrer"
-          className="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-6 backdrop-blur-md transition-all duration-300 hover:border-[#25d366]/50 hover:bg-[#25d366]/10 hover:shadow-[0_0_40px_rgba(37,211,102,0.15)] hover:-translate-y-1"
+          className="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-[#090910]/60 px-6 py-6 backdrop-blur-[2px] transition-all duration-300 hover:border-[#25d366]/50 hover:bg-[#25d366]/10 hover:shadow-[0_0_40px_rgba(37,211,102,0.15)] hover:-translate-y-1"
         >
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25d366]/15 text-[#25d366] transition-transform duration-300 group-hover:scale-110">
             <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -62,7 +62,7 @@ export function FinalCTA() {
         {/* Phone / Call */}
         <a
           href={`tel:${BRAND.phone.replace(/\s/g, "")}`}
-          className="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-6 backdrop-blur-md transition-all duration-300 hover:border-blue-400/50 hover:bg-blue-400/10 hover:shadow-[0_0_40px_rgba(96,165,250,0.15)] hover:-translate-y-1"
+          className="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-[#090910]/60 px-6 py-6 backdrop-blur-[2px] transition-all duration-300 hover:border-blue-400/50 hover:bg-blue-400/10 hover:shadow-[0_0_40px_rgba(96,165,250,0.15)] hover:-translate-y-1"
         >
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-400/15 text-blue-400 transition-transform duration-300 group-hover:scale-110">
             <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ export function FinalCTA() {
         {/* Gmail / Email */}
         <a
           href={`mailto:${BRAND.email}`}
-          className="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-6 backdrop-blur-md transition-all duration-300 hover:border-red-400/50 hover:bg-red-400/10 hover:shadow-[0_0_40px_rgba(248,113,113,0.15)] hover:-translate-y-1"
+          className="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-[#090910]/60 px-6 py-6 backdrop-blur-[2px] transition-all duration-300 hover:border-red-400/50 hover:bg-red-400/10 hover:shadow-[0_0_40px_rgba(248,113,113,0.15)] hover:-translate-y-1"
         >
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-400/15 text-red-400 transition-transform duration-300 group-hover:scale-110">
             <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ export function FinalCTA() {
         transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         className="mx-auto mt-10 max-w-xl"
       >
-        <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 backdrop-blur-xl">
+        <div className="rounded-3xl border border-white/10 bg-[#090910]/60 p-6 sm:p-8 backdrop-blur-[2px]">
           <p className="display text-center text-sm font-bold uppercase tracking-[0.2em] text-white/70 mb-6">
             Send us a message directly
           </p>
