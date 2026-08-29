@@ -25,13 +25,27 @@ function CountUp({ to, suffix = "" }: { to: number; suffix?: string }) {
   );
 }
 
-const SKILLS = [
-  "Channel Strategy",
-  "Editing Direction",
-  "Shorts Systems",
-  "Thumbnail Packaging",
-  "Sound Design",
-  "Creator Branding",
+const LEADERS = [
+  {
+    name: "VIVEK KUMAR",
+    role: "Founder & CEO",
+    company: "Foxlord Studio",
+    desc: "Leading the team, strategy and operations behind Foxlord Studio.",
+    avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
+    accent: "#3b82f6",
+    accentGlow: "rgba(59, 130, 246, 0.2)",
+    focus: ["Channel Strategy", "Editing Direction", "Creator Branding", "Executive Direction"],
+  },
+  {
+    name: "Nirlambh Singh",
+    role: "Founder’s Associate",
+    company: "Foxlord Studio",
+    desc: "Supporting the founder with daily operations, team coordination and overall management.",
+    avatar: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
+    accent: "#a855f7",
+    accentGlow: "rgba(168, 85, 247, 0.2)",
+    focus: ["Daily Operations", "Team Coordination", "Client Relations", "Workflow Systems"],
+  },
 ];
 
 const STATS = [
@@ -45,86 +59,99 @@ export function Founder() {
   return (
     <section id="founder" className="relative z-10 px-5 py-24 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-[1200px]">
-        {/* header */}
+        {/* Section Header */}
         <Reveal>
-          <p className="eyebrow">
-            <span className="text-white/40">03 /</span> Founder
-          </p>
-          <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <h2 className="display text-[clamp(2.8rem,8vw,6.5rem)] font-extrabold uppercase leading-[0.9] bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
-              Vivek
-            </h2>
-            <p className="max-w-xs text-sm leading-relaxed text-white/50 md:text-right">
-              The person behind every frame, every cut and every upload of FOXLORD STUDIO'S.
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="eyebrow">
+                <span className="text-white/40">03 /</span> Leadership
+              </p>
+              <h2 className="display mt-4 text-[clamp(2.5rem,7vw,5.5rem)] font-extrabold uppercase leading-[0.9] bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
+                The Team.
+              </h2>
+            </div>
+            <p className="max-w-sm text-sm leading-relaxed text-[#9e9eb0] md:text-right">
+              The driving force behind every frame, strategy and upload at FOXLORD STUDIO'S.
             </p>
           </div>
         </Reveal>
 
-        {/* intro + directing panel */}
-        <div className="mt-12 grid gap-6 lg:grid-cols-12">
-          <Reveal className="lg:col-span-7">
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed text-white font-medium sm:text-xl">
-                Vivek started <span className="font-black tracking-tight text-white">FOXLORD STUDIO'S</span> to
-                treat YouTube like a real brand — not a random upload machine. He directs how a creator
-                looks, sounds and grows: the edit, the packaging, the weekly system.
-              </p>
-              <div className="h-px w-40 bg-gradient-to-r from-white/60 to-transparent" />
-              <p className="text-base leading-relaxed text-[#b8b8c4]">
-                A <strong className="text-white">Creative Director</strong> is the person who owns the entire
-                vision of your channel. Not just “make the video nicer” — he decides the identity, the
-                pacing, the thumbnails, the content calendar and how every piece of content should feel on
-                the timeline.
-              </p>
-              <p className="text-base leading-relaxed text-[#b8b8c4]">
-                Day to day he handles YouTube management, channel strategy, editing direction, shorts
-                systems and creator branding — working with channels like{" "}
-                <span className="text-white font-semibold">Gaming With Riya</span> and{" "}
-                <span className="text-white font-semibold">The Motor Mouth</span>.
-              </p>
-
-              <div className="flex flex-wrap gap-2 pt-2">
-                {SKILLS.map((s) => (
-                  <span
-                    key={s}
-                    className="rounded-full border border-white/15 bg-white/[0.04] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-white/70 transition-colors duration-300 hover:border-white/40 hover:text-white"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.1} className="lg:col-span-5">
-            <div className="relative h-full rounded-3xl border border-white/15 bg-[#0d0d11]/90 p-1 transition-colors duration-500 hover:border-white/30">
-              <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-white/20 to-transparent blur-sm" />
-              <div className="relative h-full rounded-[22px] bg-[#08080c] p-6 sm:p-7">
-                <p className="display text-xs uppercase tracking-[0.25em] text-white/70 font-bold">
-                  What Vivek directs
-                </p>
-                <div className="mt-5 grid h-[calc(100%-2.5rem)] grid-cols-2 gap-4">
-                  {[
-                    ["YouTube Ops", "Full channel systems, analytics & publishing"],
-                    ["Cinematic Editing", "High-retention rhythmic cuts + sound"],
-                    ["Shorts Systems", "First-second hooks, pacing & formats"],
-                    ["Creator Branding", "Look, thumbnails & identity that clicks"],
-                  ].map(([t, d]) => (
-                    <div
-                      key={t}
-                      className="flex flex-col justify-center rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-colors duration-300 hover:border-white/20 hover:bg-white/[0.05]"
-                    >
-                      <p className="display text-sm font-bold text-white">{t}</p>
-                      <p className="mt-1.5 text-[11px] leading-relaxed text-[#8a8a9a]">{d}</p>
+        {/* Leadership Profile Cards */}
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+          {LEADERS.map((leader, i) => (
+            <Reveal key={leader.name} delay={i * 0.12} className="h-full">
+              <div
+                className="group relative flex flex-col justify-between h-full rounded-3xl border border-white/10 bg-[#090910]/95 p-7 sm:p-9 backdrop-blur-xl transition-all duration-500 hover:border-white/25 hover:-translate-y-1"
+                style={{
+                  boxShadow: `0 20px 60px -20px ${leader.accentGlow}`,
+                }}
+              >
+                <div>
+                  {/* Avatar & Badges */}
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="relative">
+                      <div
+                        className="absolute -inset-1 rounded-2xl blur-sm opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                        style={{ backgroundColor: leader.accent }}
+                      />
+                      <img
+                        src={leader.avatar}
+                        alt={leader.name}
+                        className="relative h-20 w-20 sm:h-24 sm:w-24 rounded-2xl object-cover ring-2 ring-white/30 shadow-xl bg-[#090910]"
+                      />
+                      <div
+                        className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full text-white text-[10px] font-black shadow-md ring-2 ring-[#090910]"
+                        style={{ backgroundColor: leader.accent }}
+                      >
+                        ✓
+                      </div>
                     </div>
-                  ))}
+
+                    {/* Role Pill */}
+                    <span
+                      className="rounded-full px-3.5 py-1.5 text-[11px] font-extrabold uppercase tracking-widest text-white border shadow-md"
+                      style={{
+                        backgroundColor: `${leader.accent}18`,
+                        borderColor: `${leader.accent}50`,
+                      }}
+                    >
+                      {leader.role}
+                    </span>
+                  </div>
+
+                  {/* Name & Company */}
+                  <div className="mt-6">
+                    <h3 className="display text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-white">
+                      {leader.name}
+                    </h3>
+                    <p className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white/50 mt-1">
+                      {leader.company}
+                    </p>
+                  </div>
+
+                  {/* Description */}
+                  <p className="mt-4 text-sm sm:text-base leading-relaxed text-[#c4c4d4]">
+                    {leader.desc}
+                  </p>
+
+                  {/* Focus Tags */}
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {leader.focus.map((f) => (
+                      <span
+                        key={f}
+                        className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white/70 transition-colors group-hover:border-white/20 group-hover:text-white"
+                      >
+                        {f}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+          ))}
         </div>
 
-        {/* stats band */}
+        {/* Stats Band */}
         <Reveal>
           <div className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 lg:grid-cols-4">
             {STATS.map((s) => (
@@ -140,10 +167,10 @@ export function Founder() {
           </div>
         </Reveal>
 
-        {/* pull quote */}
+        {/* Pull Quote */}
         <Reveal>
           <p className="display mx-auto mt-16 max-w-3xl text-center text-[clamp(1.3rem,3.6vw,2.5rem)] font-bold uppercase leading-tight tracking-[-0.02em] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
-            “Editors execute. Vivek directs.”
+            “Creators Create. Foxlord Directs.”
           </p>
         </Reveal>
       </div>

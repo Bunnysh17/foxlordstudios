@@ -7,18 +7,10 @@ export function Work() {
       <div className="mx-auto max-w-[1280px]">
         {/* Section Header */}
         <Reveal>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div>
-              <p className="eyebrow">
-                <span className="text-white/40">01 /</span> Case Studies
-              </p>
-              <h2 className="display mt-4 text-[clamp(2.2rem,6.5vw,4.8rem)] font-extrabold uppercase leading-[0.92] bg-gradient-to-b from-white via-white to-white/40 bg-clip-text text-transparent">
-                Latest Top Performers.
-              </h2>
-            </div>
-            <p className="max-w-md text-sm sm:text-base leading-relaxed text-[#9e9eb0]">
-              Real top-tier creators scaled with custom editing systems, viral retention hooks, and explosive multi-platform reach.
-            </p>
+          <div className="text-center sm:text-left">
+            <h2 className="display text-[clamp(2.2rem,6.5vw,4.8rem)] font-extrabold uppercase leading-[0.92] bg-gradient-to-b from-white via-white to-white/40 bg-clip-text text-transparent">
+              Latest Top Performers.
+            </h2>
           </div>
         </Reveal>
 

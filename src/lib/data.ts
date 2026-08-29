@@ -28,37 +28,37 @@ export const SERVICES = [
   {
     num: "01",
     title: "Creator Management",
-    desc: "End-to-end channel strategy, daily operations, scheduling and dedicated creator growth systems.",
+    desc: "We handle everything behind the content you create.",
     img: "https://images.pexels.com/photos/33888373/pexels-photo-33888373.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
   },
   {
     num: "02",
     title: "Social Media Management",
-    desc: "Multi-platform brand handling, daily short-form publishing, community engagement and algorithmic consistency.",
+    desc: "Complete management focused on reach views and growth.",
     img: "https://images.pexels.com/photos/7676402/pexels-photo-7676402.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
   },
   {
     num: "03",
     title: "Video Editing & GFX",
-    desc: "High-retention cinematic cuts, custom 2D/3D motion graphics, advanced sound design and visual effects.",
+    desc: "Quality editing and GFX for every budget.",
     img: "https://images.pexels.com/photos/695730/pexels-photo-695730.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
   },
   {
     num: "04",
     title: "PR & Content Clipping",
-    desc: "Viral podcast clipping, rapid shorts distribution, media placements and explosive public relations reach.",
+    desc: "Build your presence through PR and consistent content clipping.",
     img: "https://images.pexels.com/photos/33050959/pexels-photo-33050959.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
   },
   {
     num: "05",
     title: "Brand Deals & Collaborations",
-    desc: "High-paying sponsorship negotiations, premium brand partnerships and strategic creator-to-creator collabs.",
+    desc: "Get brand deals that fit your content and audience.",
     img: "https://images.pexels.com/photos/17532958/pexels-photo-17532958.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
   },
   {
     num: "06",
     title: "Online Event Management",
-    desc: "Esports tournaments, livestream gaming shows, community watch-parties and full-scale virtual fan events.",
+    desc: "We organize esports tournaments and manage online events end to end.",
     img: "https://images.pexels.com/photos/7858743/pexels-photo-7858743.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
   },
 ];
