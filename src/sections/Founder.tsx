@@ -29,6 +29,7 @@ const STATS = [
   { to: 7, suffix: "+", label: "Years Experience" },
   { to: 100, suffix: "+", label: "Happy Clients" },
   { to: 10000, suffix: "+", label: "Projects Delivered" },
+  { to: 500, suffix: "%", label: "Peak Growth Scaling" },
 ];
 
 export function Founder() {
@@ -109,15 +110,15 @@ export function Founder() {
           </Reveal>
         </div>
 
-        {/* Stats Band: 7+ Years Experience, 100+ Happy Clients, 10,000+ Projects Delivered */}
+        {/* Stats Band: 7+ Years Experience, 100+ Happy Clients, 10,000+ Projects Delivered, 500% Peak Growth */}
         <Reveal>
-          <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10">
+          <div className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 lg:grid-cols-4">
             {STATS.map((s) => (
-              <div key={s.label} className="bg-[#08080c] p-7 sm:p-9 text-center sm:text-left">
+              <div key={s.label} className="bg-[#08080c] p-6 sm:p-8 text-center sm:text-left">
                 <p className="display text-4xl sm:text-5xl font-extrabold text-white">
                   <CountUp to={s.to} suffix={s.suffix} />
                 </p>
-                <p className="mt-3 text-[11px] uppercase tracking-[0.2em] font-semibold leading-relaxed text-white/60">
+                <p className="mt-3 text-[11px] uppercase tracking-[0.18em] font-semibold leading-relaxed text-white/60">
                   {s.label}
                 </p>
               </div>
