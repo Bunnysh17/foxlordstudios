@@ -90,7 +90,7 @@ export const CHANNELS = [
       { label: "Timeframe", val: "60 Days" },
     ],
     tags: ["Podcast Direction", "Cinematic Studio Edit", "Shorts Distribution", "Thumbnails"],
-    quote: "Pehle se kaafi zyada average views aane lage hain! Har upload ki pacing, cinematic sound design aur packaging next level hai — FoxLord ne poore channel ki reach aur engagement ko exponential scale par pahuncha diya.",
+    quote: "Our average viewership per video surged far beyond our previous benchmarks since partnering with FoxLord. The pacing, cinematic sound design, and premium packaging transformed every episode into a prime-time show — scaling our reach past 100M+ views in just 60 days.",
     desc: "Complete show direction, high-retention cinematic editing, viral short-form distribution, and premium packaging — generating over 100M+ views in just 60 days and dramatically boosting average viewership across all platforms.",
   },
   {
@@ -119,7 +119,7 @@ export const CHANNELS = [
       { label: "Timeframe", val: "20 Days" },
     ],
     tags: ["Live Packaging", "Shorts Hooks", "Gamer Aesthetics", "Brand Deals"],
-    quote: "FoxLord ke saath kaam karte hi day-1 se hi insane results aane lage! Har reel aur clip par zabardast views aaye, retention skyrocket hui aur channel bohot tezi se explode hua. Unka editing aur hook system kamaal ka hai.",
+    quote: "We saw explosive results starting from Day 1! Every reel and clip started hitting massive numbers with retention skyrocketing across our streams and shorts. FoxLord's hook direction and high-energy editing language drove over 50M+ views in just 20 days.",
     desc: "High-energy stream packaging, viral hooks direction, and dynamic shorts systems — hitting 50M+ views in just 20 days with immediate day-1 growth acceleration.",
   },
 ];
