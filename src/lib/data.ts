@@ -80,7 +80,7 @@ export const CHANNELS = [
     videos: "2.7K Videos",
     igFollowers: "2.6M",
     showIgFollowers: "512K",
-    highlight: "100M+ Views — Just in 60 Days",
+    highlight: "100M+ Views on Insta Reels — Just in 60 Days",
     before: { subs: "Casual Vlogs", views: "Lower Average Views", ig: "500K" },
     after: { subs: "6.71M", views: "100M+ in 60 Days", ig: "2.6M Followers" },
     metrics: [
@@ -109,7 +109,7 @@ export const CHANNELS = [
     videos: "1.5K Videos",
     igFollowers: "137K",
     showIgFollowers: "1M Fam",
-    highlight: "50M+ Views — Just in 20 Days",
+    highlight: "50M+ Views on Insta Page — Just in 20 Days",
     before: { subs: "12K", views: "Inconsistent Growth", ig: "15K" },
     after: { subs: "1M+", views: "50M+ in 20 Days", ig: "137K Followers" },
     metrics: [
